@@ -1,0 +1,48 @@
+﻿body {
+    
+    text-align:center;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+img {
+    width:300px;
+    height:300px;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+}
+
+div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+form{
+    text-align:left;
+}
+
+form input {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formTitle{
+    display:block;
+    font-weight:800;
+    text-align:center;
+}
+
+.intro {
+    display:flex;
+    width: 50%;
+}
+
+button{
+    align-self: center;
+}

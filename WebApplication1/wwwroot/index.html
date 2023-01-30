@@ -1,0 +1,75 @@
+﻿<!--Alex Wirick
+    Section 2 
+    Mission 4
+    1/30/2023
+    This is the main html file, it includes a favicon, a title, and a form where a user can input their grades for each category in the class and output their final grade-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mission 4!</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <h1>Alex</h1>
+    <div>
+        <img src="img/IMG_8544.jpg" />
+    </div>
+    <div>
+        <p>(we like to travel)</p>
+    </div>
+
+    <div id="intro">
+        <p>
+            I am hoping to learn how to build web applications that are scalable and efficient all while doing it quickly. I have built apps with Python and Node, but I have never used the .NET framework
+            and I want to learn how to do it. That way, not only can I build apps, but I can also work on ones that are already built using this framework.
+        </p>
+    </div>
+    <div>
+        <h3>Top 3 Jobs:</h3>
+        <ul>
+            <li>Start my own business</li>
+            <li>Developer</li>
+            <li>Consultant</li>
+        </ul>
+    </div>
+
+    <!--This is the form where the user can input their grade for each category-->
+    <div>
+        <form>
+            <label id="formTitle">Insert the percentages earned in each of the following categories:</label><br />
+            <label>Assignments:</label>
+            <input required type="number" id="assignments" />%<br />
+            <label>Group Projects:</label>
+            <input required type="number" id="projects" />%<br />
+            <label>Quizzes:</label>
+            <input required type="number" id="quizzes" />%<br />
+            <label>Midterm Exam</label>
+            <input required type="number" id="midterm" />%<br />
+            <label>Exams:</label>
+            <input required type="number" id="final" />%<br />
+            <label>Intex:</label>
+            <input required type="number" id="intex" />%<br />
+            <input id="submitForm" type="button" value="Calculate Grade" /><br />
+            <label>Final Grade:</label>
+            <input readonly id="finalGrade" />%
+            <label>Letter Grade:</label>
+            <input readonly id="letter" />
+        </form>
+        <br />
+    </div>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/gradeCalculator.js"></script>
+
+</body>
+</html>
